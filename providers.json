@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "providers": [
+    {
+      "name": "openai_compatible",
+      "display_name": "OpenAI",
+      "base_url": "https://api.openai.com/v1",
+      "chat_endpoint": "/v1/chat/completions",
+      "requires_api_key": true
+    },
+    {
+      "name": "openai_compatible",
+      "display_name": "Groq",
+      "base_url": "https://api.groq.com/openai/v1",
+      "chat_endpoint": "/v1/chat/completions",
+      "requires_api_key": true
+    },
+    {
+      "name": "ollama",
+      "display_name": "Ollama (Local)",
+      "base_url": "http://localhost:11434",
+      "chat_endpoint": "/api/chat",
+      "requires_api_key": false
+    }
+  ]
+}
